@@ -25,5 +25,9 @@
 		"date-fns": "^2.28.0",
 		"lit": "^3.1.2",
 		"prettier-plugin-astro": "^0.0.12"
+	},
+	"dependencies": {
+		"rehype-katex": "^7.0.1",
+		"remark-math": "^6.0.0"
 	}
 }

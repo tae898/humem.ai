@@ -3,23 +3,27 @@ import { Container } from '@components/odyssey-theme';
 import Layout from './Page.astro'; 
 import { generateTagData } from '../utils/helpers';
 
-const {content: {title, description, publishDate, canonicalURL, featuredImage, tags} } = Astro.props;
+const { content: { title, description, publishDate, canonicalURL, featuredImage, tags } } = Astro.props;
 
-let allTagsData = [];
-
-if(tags && tags.length > 0){
-  allTagsData = generateTagData(tags);
-}
+let allTagsData = tags && tags.length > 0 ? generateTagData(tags) : [];
 
 const seo = {
-	title,
-	description,
+  title,
+  description,
   publishDate,
-	canonicalURL,
-	image: featuredImage,
+  canonicalURL,
+  image: featuredImage,
 };
 ---
 <Layout seo={seo}> 
+  <head>
+    <!-- KaTeX Styles for Proper Math Rendering -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    />
+  </head>
+
   <div class="post-header__container"> 
     <ul class="post-tags__list">
       {allTagsData.map(tag => (
@@ -36,6 +40,7 @@ const seo = {
     </p>
     {featuredImage && <img class="post-layout__img" src={featuredImage} alt={title} />}
   </div>
+
   <Container narrow>  
     <article id="article">
         <slot></slot>
