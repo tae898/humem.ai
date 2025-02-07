@@ -17,7 +17,6 @@ const seo = {
 ---
 <Layout seo={seo}> 
   <head>
-    <!-- KaTeX Styles for Proper Math Rendering -->
     <link 
       rel="stylesheet" 
       href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
@@ -25,15 +24,6 @@ const seo = {
   </head>
 
   <div class="post-header__container"> 
-    <ul class="post-tags__list">
-      {allTagsData.map(tag => (
-        <li class="post-tags__tag">
-          <a href={`/blog/tags/${tag.slug}`}>
-            {tag.title}
-          </a>
-        </li>
-      ))}
-    </ul>
     <h1>{title}</h1>
     <p class="post-layout__date">
       <time><em>{publishDate}</em></time>
@@ -43,7 +33,18 @@ const seo = {
 
   <Container narrow>  
     <article id="article">
-        <slot></slot>
+      <slot></slot>
+      
+      {allTagsData.length > 0 && (
+        <div class="post-tags">
+          {allTagsData.map((tag, index) => (
+            <>
+              {index > 0 && ", "}
+              <a href={`/blog/tags/${tag.slug}`} class="post-tag">#{tag.title}</a>
+            </>
+          ))}
+        </div>
+      )}
     </article>
   </Container>
 </Layout>
@@ -57,18 +58,6 @@ const seo = {
     margin: 1rem auto;
     padding: var(--container-padding);
   }
-  .post-tags__list {
-    margin: 1rem auto;
-    padding: 0;
-    list-style: none;
-  }
-  .post-tags__tag {
-    text-transform: uppercase;
-  }
-  .post-tags__tag a {
-    font-size: var(--font-size-sm);
-    text-decoration: none;
-  }
   .post-layout__img {
     margin: 0 auto 1rem auto;
     border-radius: var(--theme-shape-radius);
@@ -76,5 +65,19 @@ const seo = {
   .post-layout__date {
     margin-bottom: 1rem;
     opacity: 0.84;
+  }
+  .post-tags {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--theme-border-color);
+    font-size: 0.9rem;
+    color: var(--theme-text-secondary);
+  }
+  .post-tag {
+    text-decoration: none;
+    color: var(--theme-accent-color);
+  }
+  .post-tag:hover {
+    text-decoration: underline;
   }
 </style>
