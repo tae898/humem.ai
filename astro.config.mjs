@@ -7,7 +7,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 export default defineConfig({
-  site: 'https://odyssey-theme.sapling.supply/', 
+  site: 'https://humem.ai/', 
   sitemap: true,
   integrations: [
     sitemap(),
