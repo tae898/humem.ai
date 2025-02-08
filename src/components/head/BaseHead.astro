@@ -54,11 +54,12 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 </script> -->
 
 <!-- Google Analytics 4 -->
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-973VT90SE2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-973VT90SE2', { anonymize_ip: true });
-</script>
 
+  gtag('config', 'G-973VT90SE2');
+</script>
