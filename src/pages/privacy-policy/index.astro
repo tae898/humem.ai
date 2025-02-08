@@ -1,0 +1,46 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Privacy Policy | HumemAI',
+	description: 'Learn how HumemAI respects your privacy and handles your data.',
+};
+---
+
+<Layout {seo}>
+	<TextSection narrow>
+        <h1>Privacy Policy</h1>
+        <p>
+            Your privacy is important to us. This Privacy Policy explains our approach
+            to privacy and how we handle any potential data interactions.
+        </p>
+
+		<h2>1. No Data Collection</h2>
+		<p>
+			Currently, HumemAI does not collect, store, or process any personal or usage
+			data from visitors. We are committed to maintaining privacy and ensuring that
+			our website operates without tracking or storing user information.
+		</p>
+
+		<h2>2. Third-Party Services</h2>
+		<p>
+			Our website does not integrate with third-party services that track or collect
+			user data. Any external links provided are subject to the privacy policies of
+			the respective third-party websites.
+		</p>
+
+		<h2>3. Future Updates</h2>
+		<p>
+			If our data handling practices change in the future, we will update this Privacy
+			Policy accordingly and notify users as necessary.
+		</p>
+
+		<h2>4. Contact Us</h2>
+		<p>
+			If you have any questions about this Privacy Policy, please contact us at
+			<a href="mailto:info@humem.ai">info@humem.ai</a>.
+		</p>
+	</TextSection>
+</Layout>

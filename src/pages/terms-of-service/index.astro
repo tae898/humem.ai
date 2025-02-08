@@ -1,0 +1,55 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Terms of Service | HumemAI',
+	description: 'Understand the terms and conditions of using HumemAI.',
+};
+---
+
+<Layout {seo}>
+	<TextSection narrow>
+        <h1>Terms of Service</h1>
+        <p>
+            These Terms of Service govern your use of the HumemAI website and services.
+            By accessing or using our website, you agree to comply with these terms.
+        </p>
+		<h2>1. Use of Our Services</h2>
+		<p>
+			HumemAI provides AI-powered services and content for informational purposes.
+			You agree to use our website in accordance with applicable laws and regulations.
+		</p>
+
+		<h2>2. Intellectual Property</h2>
+		<p>
+			All content, trademarks, and intellectual property on this website belong to
+			HumemAI unless otherwise stated. Unauthorized use of our materials is prohibited.
+		</p>
+
+		<h2>3. Disclaimers</h2>
+		<p>
+			Our services are provided "as is" without warranties of any kind. HumemAI is
+			not responsible for inaccuracies or errors in the content provided.
+		</p>
+
+		<h2>4. Limitation of Liability</h2>
+		<p>
+			HumemAI shall not be liable for any direct, indirect, or consequential damages
+			resulting from the use of our website or services.
+		</p>
+
+		<h2>5. Modifications to Terms</h2>
+		<p>
+			We reserve the right to update these Terms of Service at any time. Continued
+			use of our website constitutes acceptance of the revised terms.
+		</p>
+
+		<h2>6. Contact Us</h2>
+		<p>
+			If you have any questions about these Terms of Service, please contact us at
+			<a href="mailto:info@humem.ai">info@humem.ai</a>.
+		</p>
+	</TextSection>
+</Layout>
