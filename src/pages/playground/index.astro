@@ -1,0 +1,30 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'HumemAI Playground',
+	description: 'An interactive space to explore HumemAI’s capabilities. Coming soon!',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>HumemAI Playground</h1>
+			<p>
+				The HumemAI Playground is where you will experience AI with <strong>human-like memory</strong> in action.
+				Interact with our intelligent agents, explore knowledge graphs, and test AI-driven insights—all in an intuitive environment.
+			</p>
+			<p><strong>Coming soon.</strong> Stay tuned for updates!</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/playground/under-construction.webp"
+				alt="Under Construction - HumemAI"
+				loading="lazy"
+			/>
+		</picture>
+	</HeroSection>
+</Layout>

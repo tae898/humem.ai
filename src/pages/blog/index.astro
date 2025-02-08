@@ -1,12 +1,7 @@
 ---
 import { parse, isBefore } from 'date-fns';
-import {
-	Container,
-	TextCardSection,
-	BlogPostsList,
-} from '@components/odyssey-theme';
+import { Container, BlogPostsList } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
-import NewsletterForm from '../../components/forms/NewsletterForm.astro';
 
 const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 	posts
@@ -27,23 +22,15 @@ const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 );
 
 const seo = {
-	title: 'Blog | Astro Odyssey Theme',
-	description: 'Astro Odyssey Theme Blog Page',
+	title: 'HumemAI Blog',
+	description: 'Stay up to date with the latest research, insights, and updates from HumemAI.',
 };
 ---
 
 <Layout {seo}>
 	<Container>
-		<TextCardSection>
-			<h1>Odyssey Blog</h1>
-			<p>
-				View our blog to stay up to date on the latest news about our business.
-				Want to be the first to hear about a new blog post? Join our newsletter!
-			</p>
-			<NewsletterForm />
-		</TextCardSection>
 		<section class="blog-posts-list__section">
-			<h2>Recent Posts</h2>
+			<h1>Recent Posts</h1>
 			<BlogPostsList posts={posts} />
 		</section>
 	</Container>

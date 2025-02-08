@@ -1,0 +1,134 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Meet the HumemAI Team',
+	description: 'Meet the researchers, engineers, and visionaries building AI with human-like memory.',
+};
+
+const teamMembers = [
+	{
+		name: 'Taewoon Kim',
+		role: 'Founder & Chief Technology Officer (CTO)',
+		description: `AI researcher specializing in knowledge graphs, machine learning, and human-like memory systems. He leads HumemAI’s development, ensuring the integration of AI with structured memory.`,
+		image: '/assets/images/team/taewoon.png',
+		email: 'taewoon@humem.ai',
+		links: {
+			Website: 'https://taewoon.kim',
+			GitHub: 'https://github.com/tae898',
+			LinkedIn: 'https://linkedin.com/in/tae898',
+			X: 'https://twitter.com/tae898',
+		},
+	},
+	{
+		name: 'Michiel van der Meer',
+		role: 'Chief Scientific Officer (CSO)',
+		description: `Expert in AI-driven knowledge representation and graph-based learning. Michiel leads HumemAI’s scientific research and ensures our models are grounded in cutting-edge AI methodologies.`,
+		image: '/assets/images/team/michiel.png',
+		email: 'michiel@humem.ai',
+		links: {
+			Website: 'https://liacs.leidenuniv.nl/~meermtvander/',
+			GitHub: 'https://github.com/m0re4u',
+			LinkedIn: 'https://linkedin.com/in/michiel-meer',
+			X: 'https://twitter.com/mtichiel',
+		},
+	},
+	{
+		name: 'Iulia Dascalu',
+		role: 'Creative Director',
+		description: `Oversees HumemAI’s visual identity, branding, and user experience. Iulia ensures our AI solutions are intuitive and accessible to a broad audience.`,
+		image: '/assets/images/team/iulia.png',
+		email: 'iulia@humem.ai',
+		links: {
+			LinkedIn: 'https://www.linkedin.com/in/iulia-stefania-dascalu',
+		},
+	},
+	{
+		name: 'Rhubarb',
+		role: 'Chief Visionary & Director of Company Affairs',
+		description: `Rhubarb oversees HumemAI’s direction, ensuring bold decisions, strategic napping, and occasional existential questioning—all while contemplating the nature of AI.`,
+		image: '/assets/images/team/rhubarb.png',
+		email: 'rhubarb@humem.ai',
+		links: {
+			X: 'https://twitter.com/pmangg',
+		},
+	},
+];
+---
+
+<Layout {seo}>
+	<TextSection narrow>
+		<h1 style="text-align: center;">Meet the HumemAI Team</h1>
+		<p style="text-align: center;">
+			Behind HumemAI is a dedicated team of <strong>AI researchers, engineers, and visionaries</strong> pushing the boundaries of artificial intelligence. With expertise in knowledge graphs, large language models, and deep learning, we are pioneering AI systems with human-like memory.
+		</p>
+
+		{teamMembers.map(member => (
+			<div class="team-member">
+				<a href={`mailto:${member.email}`}>
+					<img src={member.image} alt={member.name} class="team-image" />
+				</a>
+				<div class="team-info">
+					<h3>{member.name}</h3>
+					<p><strong>{member.role}</strong></p>
+					<p>{member.description}</p>
+					<p>
+						{Object.entries(member.links).map(([label, url]) => (
+							<a href={url} target="_blank">{label}</a>
+						)).reduce((prev, curr) => [prev, ' | ', curr])}
+					</p>
+				</div>
+			</div>
+		))}
+	</TextSection>
+</Layout>
+
+<style>
+	.team-member {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+		flex-wrap: wrap;
+	}
+
+	.team-image {
+		max-width: 150px;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		border-radius: 50%;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease-in-out;
+	}
+
+	.team-image:hover {
+		transform: scale(1.05);
+	}
+
+	.team-info {
+		max-width: 600px;
+	}
+
+	.team-info h3 {
+		margin: 0;
+		font-size: 1.5rem;
+	}
+
+	.team-info p {
+		margin: 0.5rem 0;
+		color: var(--theme-on-bg);
+	}
+
+	@media (max-width: 768px) {
+		.team-member {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		.team-info {
+			max-width: 100%;
+		}
+	}
+</style>

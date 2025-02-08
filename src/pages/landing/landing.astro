@@ -1,0 +1,43 @@
+---
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'HumemAI | AI with Human-Like Memory',
+	description:
+		'HumemAI is developing AI with human-like memory to enhance long-term learning and user interaction.',
+};
+---
+
+<TextAndImageHero reversed>
+	<div slot="text-container">
+		<h1>HumemAI: AI with Human-Like Memory</h1>
+		<p>
+			HumemAI is pioneering the future of artificial intelligence by integrating <strong
+				>human-like memory</strong
+			> into AI systems. Our goal is to create AI agents that can remember, learn,
+			and evolve over time to enable more natural interactions.
+		</p>
+		<p>
+			Given your data, HumemAI automatically builds a domain-specific
+			ontology to narrow down the data search space. It processes
+			unstructured data and transforms it into a structured graph
+			representation, which is stored in a graph database.
+		</p>
+		<p>
+			Powered by LLMs, HumemAI enables users to interact naturally without
+			needing to learn database query languages—just ask questions, and the AI
+			retrieves the most relevant information from its knowledge graph.
+		</p>
+		<p>
+			<strong>Stay tuned</strong> for updates as we push the boundaries of AI and
+			knowledge representation.
+		</p>
+	</div>
+	<picture slot="image-container">
+		<img
+			src="/assets/images/landing/humemai-dalle.webp"
+			alt="HumemAI Logo"
+			loading="lazy"
+		/>
+	</picture>
+</TextAndImageHero>

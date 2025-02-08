@@ -4,44 +4,73 @@ import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
-	title: 'About | Astro Odyssey Theme',
-	description: 'About Page',
+	title: 'About HumemAI',
+	description: 'The story behind HumemAI: AI with human-like memory.',
 };
 ---
 
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
+			<h1>About HumemAI</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
-				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
-				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
-				Numquam.
+				HumemAI was born from <strong
+					><a
+						href="https://taewoon.kim"
+						target="_blank"
+						rel="noopener noreferrer">Taewoon Kim</a
+					>’s PhD research</strong
+				>, where he explored the intersection of knowledge graphs, machine
+				learning, and human cognition to create AI that can remember, learn,
+				and adapt over time.
 			</p>
 		</div>
-    <picture slot="image-container">
-      <img
-        src="/assets/images/home/classic-hero.jpg"
-        alt="Astro Odyssee"
-        id="home-hero-image"
-      />
-    </picture>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/landing/michiel-and-taewoon.jpg"
+				alt="Taewoon Kim and Michiel at HumemAI"
+				id="about-hero-image"
+			/>
+		</picture>
 	</HeroSection>
-  <TextSection narrow>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo asperiores alias illo accusamus voluptatem ea cum nemo odit! Consequatur quidem quo iusto quam ea neque nisi dolorum quod, recusandae id!
-      Repudiandae, fugit labore voluptatum beatae modi omnis adipisci corrupti aut aliquid cumque inventore iure possimus doloremque iste incidunt nulla architecto. Nobis iusto sunt voluptatem necessitatibus laborum, earum doloremque fugit rerum!
-    </p>
-    <p>Fugit asperiores harum consectetur sapiente deleniti. Optio enim tenetur impedit reprehenderit labore, illo eius in, consequatur odio dolore iste assumenda explicabo, nisi similique qui obcaecati possimus delectus reiciendis quod modi.</p>
-    
-    <p>
-      Vel tempore rem omnis esse officiis optio, explicabo, quod deleniti adipisci ullam cum necessitatibus eius minus vero saepe ad, dicta rerum praesentium deserunt illo itaque odio corrupti voluptatum quibusdam. Pariatur.
-      Porro neque tempore, illum eligendi deleniti iure dolorem amet magnam at dolores veniam nemo cumque aut alias repellat est dicta sit repellendus facilis officia? Minima dolorum quo ducimus adipisci perferendis.
-    </p>
-    <p>
-      Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt, voluptatibus rem eum fuga modi beatae cum ullam delectus dicta atque eius nam quos corporis. Animi praesentium quae nobis. Odit, mollitia. Voluptatum, hic explicabo. Ex accusamus ipsa ea dolor commodi quas esse ipsum alias et adipisci error necessitatibus atque facere rerum ratione consequatur aspernatur repudiandae minima consectetur fuga, doloremque dolorum pariatur.
-      Ipsam error eaque velit possimus porro eum quod illo iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit minus?
-    </p>
-  </TextSection>
+
+	<TextSection narrow>
+		<p>
+			Unlike traditional AI models that start every interaction from scratch,
+			HumemAI introduces a <strong>memory-driven approach</strong>. It
+			automatically constructs a domain-specific ontology to narrow down the
+			search space for data, converting unstructured information into a
+			structured knowledge graph stored in a graph database.
+		</p>
+
+		<p>
+			By integrating LLMs, users can interact naturally without dealing
+			with complex query languages—they can simply ask questions, and HumemAI
+			retrieves the most relevant insights from its evolving knowledge base.
+		</p>
+
+		<p>
+			This system is designed for business intelligence, research automation,
+			and AI assistants that need long-term learning capabilities. From
+			analyzing large datasets to providing context-aware AI solutions, HumemAI
+			is pushing the boundaries of what AI can remember and understand.
+		</p>
+
+		<p>
+			Our long-term goal is to develop the most general ontology capable of
+			covering any dataset. However, in many practical applications, such a
+			broad ontology would be overkill. That’s why HumemAI dynamically
+			generates specific ontologies tailored to each problem. This process is
+			semi-automated with minimal human intervention, ensuring efficiency
+			while maintaining accuracy.
+		</p>
+
+		<p>
+			The HumemAI team has a strong academic research background, pioneering
+			not only applied AI solutions but also contributing to fundamental
+			research in AI, knowledge graphs, and cognitive computing. We are
+			dedicated to advancing the field, bridging the gap between theoretical
+			research and real-world AI applications.
+		</p>
+	</TextSection>
 </Layout>
