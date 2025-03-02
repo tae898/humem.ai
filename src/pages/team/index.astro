@@ -1,4 +1,4 @@
----
+s---
 import { TextSection } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 
@@ -46,13 +46,20 @@ const teamMembers = [
 	},
 	{
 		name: 'Rhubarb',
-		role: 'Chief Visionary & Director of Company Affairs',
-		description: `Rhubarb oversees HumemAI’s direction, ensuring bold decisions, strategic napping, and occasional existential questioning—all while contemplating the nature of AI.`,
+		role: 'Chief Enthusiasm Officer (CEO)',
+		description: `As HumemAI’s most energetic team member, Rhubarb ensures that every brainstorming session includes enthusiastic tail wags and boundless optimism. With a strategic focus on fetching great ideas and sniffing out opportunities, he embodies the spirit of fearless exploration—except when it comes to vacuum cleaners.`,
 		image: '/assets/images/team/rhubarb.png',
 		email: 'rhubarb@humem.ai',
 		links: {
 			X: 'https://twitter.com/pmangg',
 		},
+	},
+	{
+		name: 'Satoru',
+		role: 'Chief Contemplation Officer (CCO)',
+		description: `Satoru is the mastermind behind HumemAI’s contemplative moments, bringing a zen-like approach to problem-solving (mostly by napping on keyboards). With an unmatched ability to ignore distractions and a keen eye for strategic positioning—usually in the sunniest spot in the office—he ensures that every project is approached with grace, patience, and just a hint of mischief.`,
+		image: '/assets/images/team/sato.png',
+		links: {},
 	},
 ];
 ---
@@ -63,20 +70,25 @@ const teamMembers = [
 		<p style="text-align: center;">
 			Behind HumemAI is a dedicated team of <strong>AI researchers, engineers, and visionaries</strong> pushing the boundaries of artificial intelligence. With expertise in knowledge graphs, large language models, and deep learning, we are pioneering AI systems with human-like memory.
 		</p>
-
 		{teamMembers.map(member => (
 			<div class="team-member">
-				<a href={`mailto:${member.email}`}>
+				{member.email ? (
+					<a href={`mailto:${member.email}`}>
+						<img src={member.image} alt={member.name} class="team-image" />
+					</a>
+				) : (
 					<img src={member.image} alt={member.name} class="team-image" />
-				</a>
+				)}
 				<div class="team-info">
 					<h3>{member.name}</h3>
 					<p><strong>{member.role}</strong></p>
 					<p>{member.description}</p>
 					<p>
-						{Object.entries(member.links).map(([label, url]) => (
-							<a href={url} target="_blank">{label}</a>
-						)).reduce((prev, curr) => [prev, ' | ', curr])}
+						{Object.entries(member.links).length > 0 ? 
+							Object.entries(member.links).map(([label, url]) => (
+								<a href={url} target="_blank">{label}</a>
+							)).reduce((prev, curr) => [prev, ' | ', curr]) 
+							: null}
 					</p>
 				</div>
 			</div>
