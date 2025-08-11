@@ -5,7 +5,7 @@ import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
 	title: 'About HumemAI',
-	description: 'The story behind HumemAI: AI with human-like memory.',
+	description: 'From PhD research to product: fusing machine learning, knowledge graphs, and databases into an AI with human‑like memory.',
 };
 ---
 
@@ -14,15 +14,11 @@ const seo = {
 		<div slot="text-container">
 			<h1>About HumemAI</h1>
 			<p>
-				HumemAI was born from <strong
-					><a
-						href="https://taewoon.kim"
-						target="_blank"
-						rel="noopener noreferrer">Taewoon Kim</a
-					>’s PhD research</strong
-				>, where he explored the intersection of knowledge graphs, machine
-				learning, and human cognition to create AI that can remember, learn,
-				and adapt over time.
+				HumemAI started from Taewoon Kim’s PhD thesis, <em>“A Machine With Human‑Like
+				Memory”</em>. The core idea: glue together three pillars—<strong>machine
+				learning</strong>, <strong>knowledge graphs</strong>, and <strong>databases</strong>—and
+				add a human aspect by modeling an agent’s memory as a graph that persists, learns,
+				and adapts.
 			</p>
 		</div>
 		<picture slot="image-container">
@@ -36,41 +32,30 @@ const seo = {
 
 	<TextSection narrow>
 		<p>
-			Unlike traditional AI models that start every interaction from scratch,
-			HumemAI introduces a <strong>memory-driven approach</strong>. It
-			automatically constructs a domain-specific ontology to narrow down the
-			search space for data, converting unstructured information into a
-			structured knowledge graph stored in a graph database.
+			From toy examples to real applications, the thesis explored memory as a
+			knowledge graph, reinforcement learning for memory management policies, and
+			persistence in databases so knowledge isn’t lost. That trajectory became
+			HumemAI.
 		</p>
 
 		<p>
-			By integrating LLMs, users can interact naturally without dealing
-			with complex query languages—they can simply ask questions, and HumemAI
-			retrieves the most relevant insights from its evolving knowledge base.
+			Today, users interact through an LLM while HumemAI performs <strong>hybrid
+			retrieval</strong>—vector similarity plus graph queries—to ground answers in a
+			continuously evolving knowledge graph. It’s natural to use, explainable by
+			design, and reusable across workflows.
 		</p>
 
 		<p>
-			This system is designed for business intelligence, research automation,
-			and AI assistants that need long-term learning capabilities. From
-			analyzing large datasets to providing context-aware AI solutions, HumemAI
-			is pushing the boundaries of what AI can remember and understand.
+			We’re open‑source first. The stack—NoSQL DB, analytics engine, search engine,
+			LLMs, vector DB—is built with permissive licenses. Anyone can self‑host
+			HumemAI for free. We also offer managed hosting (SaaS/PaaS) and tailored
+			ontology design to fit your data.
 		</p>
 
 		<p>
-			Our long-term goal is to develop the most general ontology capable of
-			covering any dataset. However, in many practical applications, such a
-			broad ontology would be overkill. That’s why HumemAI dynamically
-			generates specific ontologies tailored to each problem. This process is
-			semi-automated with minimal human intervention, ensuring efficiency
-			while maintaining accuracy.
-		</p>
-
-		<p>
-			The HumemAI team has a strong academic research background, pioneering
-			not only applied AI solutions but also contributing to fundamental
-			research in AI, knowledge graphs, and cognitive computing. We are
-			dedicated to advancing the field, bridging the gap between theoretical
-			research and real-world AI applications.
+			Our research focus keeps us ahead: integrating ML with graphs and databases
+			to scale reasoning, improve retrieval, and automate schema/ontology learning.
+			That’s how we move beyond short‑lived hype to durable capabilities.
 		</p>
 	</TextSection>
 </Layout>

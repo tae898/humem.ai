@@ -1,0 +1,61 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Research | HumemAI',
+	description: 'Advancing AI with human‑like memory by combining machine learning, knowledge graphs, and databases.',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>Research at HumemAI</h1>
+			<p>
+				We investigate how <strong>machine learning</strong>, <strong>knowledge graphs</strong>,
+				and <strong>databases</strong> reinforce each other to build AI systems with
+				persistent, explainable memory.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/research.png"
+				alt="Research at HumemAI"
+				id="about-hero-image"
+			/>
+		</picture>
+	</HeroSection>
+
+	<TextSection narrow>
+		<p>
+			<strong>Hybrid retrieval (graph + vector)</strong>: Combine semantic embeddings
+			with graph queries for accuracy, robustness, and explainability—without
+			forcing users to learn query languages.
+		</p>
+
+		<p>
+			<strong>Ontology and graph construction</strong>: Use LLMs and ML pipelines to
+			extract entities/relations, induce schema, and continuously evolve
+			domain‑specific ontologies from raw data and interactions.
+		</p>
+
+		<p>
+			<strong>Memory management policies</strong>: Learn what to store, summarize,
+			link, and forget using reinforcement learning and heuristics guided by task
+			performance and retrieval quality.
+		</p>
+
+		<p>
+			<strong>Query planning with LLMs</strong>: Plan and execute mixed DB/graph
+			operations, ground generation, and verify answers against the knowledge
+			graph.
+		</p>
+
+		<p>
+			We publish, build open‑source tooling, and validate on real workloads so the
+			results transfer directly into product capabilities. <a href="/contact">Collaborate with us</a>.
+		</p>
+	</TextSection>
+</Layout>

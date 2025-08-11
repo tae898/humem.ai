@@ -1,0 +1,62 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Pricing | HumemAI',
+	description: 'Open‑source and free to self‑host. Managed cloud and tailored ontology/services available.',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>Pricing</h1>
+			<p>
+				HumemAI is open‑source. Self‑host for free with no restrictions, or let us
+				run it for you with managed hosting and tailored services.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/pricing.png"
+				alt="HumemAI team"
+				id="about-hero-image"
+			/>
+		</picture>
+	</HeroSection>
+
+	<TextSection narrow>
+		<p>
+			<strong>Self‑host (Free)</strong><br />
+			Use our permissively licensed open‑source stack (NoSQL DB, analytics engine,
+			search engine, LLMs, vector DB). Deploy on your infra with full control.
+		</p>
+
+		<p>
+			<strong>Managed Cloud (SaaS/PaaS)</strong><br />
+			We host and operate HumemAI for you: ingestion pipelines, hybrid
+			graph+vector retrieval, scalable graph/database backends, monitoring, and
+			updates. Usage‑based pricing tailored to your workload.
+		</p>
+
+		<p>
+			<strong>Tailored Ontology & Setup</strong><br />
+			We design a domain‑specific ontology (schema), map your data, tune
+			connectors, and optimize retrieval. Ideal when you want a graph that matches
+			your business semantics.
+		</p>
+
+		<p>
+			<strong>Support Plans</strong><br />
+			Email support included for managed plans; optional SLAs and dedicated
+			assistance available.
+		</p>
+
+		<p>
+			<a href="/contact">Contact us</a> to discuss volume, compliance, and custom
+			requirements.
+		</p>
+	</TextSection>
+</Layout>
