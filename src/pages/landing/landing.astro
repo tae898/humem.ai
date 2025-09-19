@@ -2,26 +2,29 @@
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
 
 const seo = {
-	title: 'AI that remembers, reasons, and reuses | HumemAI',
+	title: 'AI with human‑like memory | HumemAI',
 	description:
-		'Build AI agents with persistent, graph‑structured memory across SQL and NoSQL. Hybrid vector + relationship‑aware retrieval, explainable answers, open‑source by default.',
+		'HumemAI separates conversations from data using temporal knowledge graphs and hybrid retrieval across SQL/NoSQL databases.',
 };
 ---
 
 <TextAndImageHero reversed>
 	<div slot="text-container">
-		<h1>AI that actually remembers your data</h1>
+		<h1>AI with human‑like memory</h1>
 		<p>
-			Keeping conversation history is critical. HumemAI gives your AI persistent memory by storing chats in a <strong>temporal knowledge graph</strong>. We decompose messages into entities and relations and persist them in a property‑graph database, so you can see how dialogue evolves over time.
+			HumemAI separates <strong>conversations</strong> from <strong>data</strong> using two complementary memory systems inspired by cognitive science:
 		</p>
 		<p>
-			Use HumemAI as a chat with persistent memory—or bring your own data (relational tables, graphs, other NoSQL). Connect it once and talk to your data naturally; HumemAI handles <strong>hybrid RAG</strong> behind the scenes.
+			<strong>Episodic</strong>: Your conversations with HumemAI agents are stored as a <strong>temporal knowledge graph</strong> capturing the "where", "when", and "what" of each interaction. This personal, time‑aware memory can be visualized and persisted in graph databases for efficient read/write operations.
 		</p>
 		<p>
-			HumemAI is fully open‑source and we contribute to databases and RAG. If you’re unsure which database fits or how to scope read/write access and queries, that’s our paid service: tell us your data and we’ll wire HumemAI to it safely.
+			<strong>Semantic</strong>: Your databases—SQL (relational) and NoSQL (document, graph, key‑value, etc.)—connect through lightweight adapters. When needed, we apply minimal, reversible transformations so data aligns with supported engines and schemas—avoiding wholesale migrations.
 		</p>
 		<p>
-			<a href="/playground">Try the playground</a> · <a href="/about">About</a>
+			Together, these memory systems enable <strong>hybrid retrieval</strong>: relationship‑aware queries over your conversation history combined with semantic search across your data, delivering contextually grounded and explainable answers.
+		</p>
+		<p>
+			<a href="/playground">Try the playground</a> · <a href="/about">About our approach</a>
 		</p>
 	</div>
 	<picture slot="image-container">

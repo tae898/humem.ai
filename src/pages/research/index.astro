@@ -4,58 +4,53 @@ import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
-	title: 'Research | HumemAI',
-	description: 'Advancing AI with human‑like memory by combining machine learning, temporal knowledge graphs, and databases.',
+  title: 'Research | HumemAI',
+  description: 'Advancing AI with human‑like memory at the intersection of cognitive science, temporal knowledge graphs, databases, and machine learning.',
 };
 ---
 
 <Layout {seo}>
-	<HeroSection>
-		<div slot="text-container">
-			<h1>Research at HumemAI</h1>
-			<p>
-				We investigate how <strong>machine learning</strong>, <strong>temporal knowledge graphs</strong>,
-				and <strong>SQL/NoSQL databases</strong> reinforce each other to build <strong>agentic AI systems</strong> with
-				persistent, explainable memory.
-			</p>
-		</div>
-		<picture slot="image-container">
-			<img
-				src="/assets/images/research.png"
-				alt="Research at HumemAI"
-				id="about-hero-image"
-			/>
-		</picture>
-	</HeroSection>
+  <HeroSection>
+    <div slot="text-container">
+      <h1>Research at HumemAI</h1>
+      <p>
+        We work at the intersection of <strong>cognitive science</strong>, <strong>temporal knowledge graphs</strong>,
+        <strong>databases</strong>, and <strong>AI (machine learning)</strong> to build agentic systems with
+        persistent, explainable memory.
+      </p>
+    </div>
+    <picture slot="image-container">
+      <img src="/assets/images/research.png" alt="Research at HumemAI" id="about-hero-image" />
+    </picture>
+  </HeroSection>
 
-	<TextSection narrow>
-		<p>
-			<strong>Hybrid retrieval (relationship‑aware + vector)</strong>: Combine semantic embeddings
-			with relationship‑aware queries over graph‑structured representations for accuracy, robustness,
-			and explainability—without forcing users to learn query languages. This enables robust <strong>agentic planning</strong> and tool use.
-		</p>
+  <TextSection narrow>
+    <p>
+      <strong>Conversation‑aware knowledge graphs</strong>: Modeling dialogue as temporal graphs that capture the "where", "when", and "what" of interactions—supporting time‑aware recall and explanation.
+    </p>
 
-		<p>
-			<strong>Ontology and graph construction</strong>: Use LLMs and ML pipelines to
-			extract entities/relations, induce schema, and continuously evolve
-			domain‑specific ontologies from raw data and interactions.
-		</p>
+    <p>
+      <strong>Data integration across engines</strong>: Connecting to relational, document, graph, vector, and key‑value stores using thin adapters and minimal, reversible transformations to align with supported engines and schemas—avoiding wholesale migration.
+    </p>
 
-		<p>
-			<strong>Memory management policies</strong>: Learn what to store, summarize,
-			link, and forget using reinforcement learning and heuristics guided by task
-			performance and retrieval quality—critical for long‑lived <strong>agents</strong>.
-		</p>
+    <p>
+      <strong>Hybrid retrieval (relationship‑aware + vector)</strong>: Combining semantic embeddings with relationship‑aware queries over conversation graphs and data representations to improve accuracy, robustness, and transparency.
+    </p>
 
-		<p>
-			<strong>Query planning with LLMs</strong>: Plan and execute mixed SQL/NoSQL and
-			relationship/graph operations, ground generation, and verify answers against the
-			temporal knowledge graph layer—foundations for <strong>agentic</strong> reasoning and action.
-		</p>
+    <p>
+      <strong>Temporal graph construction</strong>: Using LLMs and ML pipelines for entity/relation extraction, temporal schema induction, and continuous graph evolution from natural language.
+    </p>
 
-		<p>
-			We publish, build open‑source tooling, and validate on real workloads so the
-			results transfer directly into product capabilities. <a href="/contact">Collaborate with us</a>.
-		</p>
-	</TextSection>
+    <p>
+      <strong>Memory management policies</strong>: Learning what to store, summarize, link, and forget based on task performance and retrieval quality to support long‑lived agents.
+    </p>
+
+    <p>
+      <strong>Cross‑source query planning</strong>: Planning and executing operations that span conversation history and external data sources to ground answers in both interaction context and domain knowledge.
+    </p>
+
+    <p>
+      We publish, build open‑source tooling, and validate on real workloads so results transfer directly into product capabilities. <a href="/contact">Collaborate with us</a>.
+    </p>
+  </TextSection>
 </Layout>

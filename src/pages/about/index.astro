@@ -14,49 +14,48 @@ const seo = {
 		<div slot="text-container">
 			<h1>About HumemAI</h1>
 			<p>
-				HumemAI started from Taewoon Kim’s PhD thesis, <em>“A Machine With Human‑Like
-				Memory”</em>. The core idea: glue together three pillars—<strong>machine
-				learning</strong>, <strong>temporal knowledge graphs</strong>, and <strong>SQL/NoSQL databases</strong>—and
-				add a human aspect by modeling an <strong>agent’s</strong> memory as <strong>graph‑structured</strong> state that
-				persists across SQL/NoSQL, learns, and adapts.
-			</p>
-		</div>
-		<picture slot="image-container">
-			<img
-				src="/assets/images/about.png"
-				alt="Taewoon Kim and Michiel at HumemAI"
-				id="about-hero-image"
-			/>
-		</picture>
-	</HeroSection>
+				HumemAI started from Taewoon Kim's PhD thesis, <em>"A Machine With Human‑Like
+Memory"</em>. The core idea: separate <strong>conversations</strong> from <strong>data</strong> using
+human‑inspired <strong>episodic</strong> and <strong>semantic memory</strong>, then glue together
+<strong>machine learning</strong>, <strong>temporal knowledge graphs</strong>, and <strong>SQL/NoSQL databases</strong>
+to create <strong>agentic AI systems</strong> with persistent, explainable memory.
+</p>
+</div>
+<picture slot="image-container">
+<img
+src="/assets/images/about.png"
+alt="Taewoon Kim and Michiel at HumemAI"
+id="about-hero-image"
+/>
+</picture>
+</HeroSection>
 
-	<TextSection narrow>
-		<p>
-			From toy examples to real applications, the thesis explored memory as a
-			temporal knowledge graph, reinforcement learning for memory management policies, and
-			persistence in databases so knowledge isn’t lost. That trajectory became
-			HumemAI.
-		</p>
+<TextSection narrow>
+<p>
+<strong>Episodic Memory</strong>: From conversations to temporal knowledge graphs. Your dialogue with HumemAI agents captures the "where", "when", and "what" of interactions in a time‑aware graph structure. This personal memory evolves continuously, learning from each exchange while maintaining full context of past conversations.
+</p>
 
-		<p>
-			Today, users interact through an LLM while HumemAI performs <strong>hybrid
-			retrieval</strong>—vector similarity plus <strong>relationship‑aware</strong> queries over
-			graph‑structured memory—to ground answers in a continuously evolving temporal knowledge graph layer.
-			It powers <strong>agentic</strong> workflows: natural to use, explainable by design, and reusable across tasks.
-		</p>
+<p>
+<strong>Semantic Memory</strong>: Your operational data remains in your databases while we add a thin compatibility layer when needed. Whether relational (SQL), document (MongoDB), graph (Neo4j), vector, or key‑value stores, HumemAI connects via adapters and performs intelligent read/write across your systems. When formats differ, we apply minimal, reversible transformations—not wholesale migrations—to fit supported engines and schemas.
+</p>
 
-		<p>
-			We’re open‑source first. The stack—<strong>SQL and NoSQL databases</strong> (relational, graph, vector,
-			key‑value, wide‑column, document, search), analytics, and LLMs—is built with permissive licenses.
-			Bring your data in any format—tables, graphs, documents—and HumemAI stores it wisely across the right engines.
-			Anyone can self‑host HumemAI for free. We also offer managed hosting (SaaS/PaaS) and tailored
-			ontology design to fit your data.
-		</p>
+<p>
+Today, users interact through an LLM while HumemAI performs <strong>hybrid
+retrieval</strong>—vector similarity plus <strong>relationship‑aware</strong> queries over
+both episodic conversations and semantic data—to ground answers in a continuously evolving knowledge layer.
+It powers <strong>agentic</strong> workflows: natural to use, explainable by design, and reusable across tasks.
+</p>
 
-		<p>
-			Our research focus keeps us ahead: integrating ML with graphs and databases
-			to scale reasoning, improve retrieval, and automate schema/ontology learning.
-			That’s how we move beyond short‑lived hype to durable capabilities.
-		</p>
-	</TextSection>
+<p>
+We're open‑source first. The stack—<strong>SQL and NoSQL databases</strong> (relational, graph, vector,
+key‑value, wide‑column, document, search), analytics, and LLMs—is built with permissive licenses.
+Bring your data in any format—tables, graphs, documents—and HumemAI stores conversations wisely in temporal knowledge graphs while keeping your source systems authoritative. Anyone can self‑host HumemAI for free. We also offer collaborative development and tailored system design to fit your specific data architecture.
+</p>
+
+<p>
+Our research focus keeps us ahead: integrating ML with graphs and databases
+to scale reasoning, improve retrieval, and automate schema/ontology learning.
+That's how we move beyond short‑lived hype to durable capabilities grounded in cognitive science.
+</p>
+</TextSection>
 </Layout>

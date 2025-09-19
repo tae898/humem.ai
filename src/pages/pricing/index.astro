@@ -5,59 +5,62 @@ import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
 	title: 'Pricing | HumemAI',
-	description: 'Open‑source and free to self‑host. Managed cloud and tailored ontology/services available.',
+	description: 'Open‑source and free to self‑host. We build custom episodic and semantic memory systems together with you.',
 };
 ---
 
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>Pricing</h1>
+			<h1>Building Together</h1>
 			<p>
-				HumemAI is open‑source. Self‑host for free with no restrictions, or let us
-				run it for you with managed hosting and tailored services for <strong>agentic</strong> applications.
-			</p>
-		</div>
-		<picture slot="image-container">
-			<img
-				src="/assets/images/pricing.png"
-				alt="HumemAI team"
-				id="about-hero-image"
-			/>
-		</picture>
-	</HeroSection>
+				HumemAI is fully open‑source. We're focused on <strong>collaborative development</strong> with customers
+to build tailored <strong>episodic</strong> and <strong>semantic memory</strong> systems that fit your specific
+data architecture, schema, and business requirements.
+</p>
+</div>
+<picture slot="image-container">
+<img
+src="/assets/images/pricing.png"
+alt="HumemAI team"
+id="about-hero-image"
+/>
+</picture>
+</HeroSection>
 
-	<TextSection narrow>
+<TextSection narrow>
+<p>
+<strong>Self‑host (Always Free)</strong><br />
+Use our permissively licensed open‑source stack: episodic memory (temporal knowledge graphs for conversations) and semantic memory (SQL/NoSQL database integrations). Deploy on your infrastructure with full control over both conversation history and data access patterns.
+</p>
+
+<p>
+<strong>Collaborative Development</strong><br />
+Since we're in early stages and every customer's data architecture is unique, we don't offer plug‑and‑play SaaS yet. Instead, we work directly with you to understand your:
+		</p>
+		<ul>
+			<li><strong>Data schema</strong>: Table structures, graph relationships, document formats</li>
+			<li><strong>Database types</strong>: Which SQL/NoSQL systems you use and how they connect</li>
+			<li><strong>Access patterns</strong>: How your applications read/write data</li>
+			<li><strong>Memory requirements</strong>: What conversations to preserve vs. what data to query</li>
+		</ul>
+
 		<p>
-			<strong>Self‑host (Free)</strong><br />
-			Use our permissively licensed open‑source stack: SQL and NoSQL databases
-			(relational, graph, vector, key‑value, wide‑column, document, search), analytics, and LLMs.
-			Deploy on your infra with full control for agents and tools.
+			Together, we design and implement your episodic memory system (capturing conversation context) and semantic memory integrations (connecting to your databases). This collaborative approach ensures the solution fits your exact requirements while advancing our research.
 		</p>
 
 		<p>
-			<strong>Managed Cloud (SaaS)</strong><br />
-			We host and operate HumemAI for you: ingestion pipelines, hybrid
-			relationship‑aware + vector retrieval, scalable SQL and NoSQL backends, monitoring, and
-			updates. Optimized for <strong>agentic orchestration</strong>. Usage‑based pricing tailored to your workload.
-		</p>
+			<strong>Future SaaS Plans</strong><br />
+			As patterns emerge from our collaborative projects, we plan to offer managed hosting for common architectures. For now, we're investing in understanding diverse data landscapes through partnership rather than premature standardization.
+</p>
 
-		<p>
-			<strong>Tailored Ontology & Setup</strong><br />
-			We design a domain‑specific ontology (schema), map your data from tables, documents, and graphs,
-			tune connectors, and optimize retrieval across diverse databases. Ideal when you want a graph that
-			matches your business semantics.
-		</p>
+<p>
+<strong>Investment in Research</strong><br />
+Every collaborative project contributes to our open‑source research in episodic/semantic memory systems, temporal knowledge graphs, and hybrid retrieval across heterogeneous databases. Your implementation helps advance the field.
+</p>
 
-		<p>
-			<strong>Support Plans</strong><br />
-			Email support included for managed plans; optional SLAs and dedicated
-			assistance available.
-		</p>
-
-		<p>
-			<a href="/contact">Contact us</a> to discuss volume, compliance, and custom
-			requirements.
-		</p>
-	</TextSection>
+<p>
+<a href="/contact">Let's build together</a> — tell us about your data architecture and we'll design a memory system that fits.
+</p>
+</TextSection>
 </Layout>
