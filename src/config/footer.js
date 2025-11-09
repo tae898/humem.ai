@@ -38,7 +38,6 @@ export const footerLists = [
 			{ title: 'About', slug: '/about' },
 			{ title: 'Pricing', slug: '/pricing' },
 			{ title: 'Research', slug: '/research' },
-			{ title: 'Team', slug: '/team' },
 			{ title: 'Contact', slug: '/contact' },
 		],
 	},
@@ -46,7 +45,6 @@ export const footerLists = [
 		title: 'Resources',
 		items: [
 			{ title: 'Blog', slug: '/blog' },
-			{ title: 'Playground', slug: '/playground' },
 		],
 	},
 	{

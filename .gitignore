@@ -24,3 +24,4 @@ icon.d.ts
 
 .astro/
 .vscode/
+.venv/

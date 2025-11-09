@@ -16,14 +16,6 @@ export const nav = [
 		slug: '/research',
 	},
 	{
-		title: 'Team',
-		slug: '/team',
-	},
-	{
-		title: 'Playground',
-		slug: '/playground',
-	},
-	{
 		title: 'Blog',
 		slug: '/blog',
 	},

@@ -4,63 +4,61 @@ import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
-	title: 'Pricing | HumemAI',
-	description: 'Open‑source and free to self‑host. We build custom episodic and semantic memory systems together with you.',
+	title: 'Development & Partnerships | HumemAI',
+	description: 'HumemAI is advancing open AI memory infrastructure through research and open-source contributions.',
 };
 ---
 
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>Building Together</h1>
+			<h1>Development & Partnerships</h1>
 			<p>
-				HumemAI is fully open‑source. We're focused on <strong>collaborative development</strong> with customers
-to build tailored <strong>episodic</strong> and <strong>semantic memory</strong> systems that fit your specific
-data architecture, schema, and business requirements.
-</p>
-</div>
-<picture slot="image-container">
-<img
-src="/assets/images/pricing.png"
-alt="HumemAI team"
-id="about-hero-image"
-/>
-</picture>
-</HeroSection>
+				HumemAI is currently in active development, advancing open AI memory infrastructure through research and open‑source contributions.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/pricing.png"
+				alt="HumemAI"
+				id="about-hero-image"
+			/>
+		</picture>
+	</HeroSection>
 
-<TextSection narrow>
-<p>
-<strong>Self‑host (Always Free)</strong><br />
-Use our permissively licensed open‑source stack: episodic memory (temporal knowledge graphs for conversations) and semantic memory (SQL/NoSQL database integrations). Deploy on your infrastructure with full control over both conversation history and data access patterns.
-</p>
-
-<p>
-<strong>Collaborative Development</strong><br />
-Since we're in early stages and every customer's data architecture is unique, we don't offer plug‑and‑play SaaS yet. Instead, we work directly with you to understand your:
-		</p>
-		<ul>
-			<li><strong>Data schema</strong>: Table structures, graph relationships, document formats</li>
-			<li><strong>Database types</strong>: Which SQL/NoSQL systems you use and how they connect</li>
-			<li><strong>Access patterns</strong>: How your applications read/write data</li>
-			<li><strong>Memory requirements</strong>: What conversations to preserve vs. what data to query</li>
-		</ul>
-
+	<TextSection narrow>
+		<h2>What We're Building</h2>
 		<p>
-			Together, we design and implement your episodic memory system (capturing conversation context) and semantic memory integrations (connecting to your databases). This collaborative approach ensures the solution fits your exact requirements while advancing our research.
+			<strong>Episodic Memory</strong>: Natural language conversations automatically parsed and stored as persistent temporal knowledge graphs, capturing full context across interactions.
 		</p>
 
 		<p>
-			<strong>Future SaaS Plans</strong><br />
-			As patterns emerge from our collaborative projects, we plan to offer managed hosting for common architectures. For now, we're investing in understanding diverse data landscapes through partnership rather than premature standardization.
-</p>
+			<strong>Semantic Memory</strong>: Multi‑model database integration that keeps your data in optimal formats — whether structured or unstructured — unified by intelligent adapters.
+		</p>
 
-<p>
-<strong>Investment in Research</strong><br />
-Every collaborative project contributes to our open‑source research in episodic/semantic memory systems, temporal knowledge graphs, and hybrid retrieval across heterogeneous databases. Your implementation helps advance the field.
-</p>
+		<p>
+			<strong>Hybrid Retrieval</strong>: Relationship‑aware queries across both memory systems, delivering answers that are contextually grounded and fully explainable.
+		</p>
 
-<p>
-<a href="/contact">Let's build together</a> — tell us about your data architecture and we'll design a memory system that fits.
-</p>
-</TextSection>
+		<h2>Current Phase</h2>
+		<p>
+			We're contributing to open‑source databases and publishing research while building our integrated platform. Our competitive advantage comes from deep expertise in temporal graphs, multi‑model databases, and AI systems — not code secrecy.
+		</p>
+
+		<p>
+			The SDK and example applications will be released as they mature. Follow our progress on <a href="https://github.com/humemai" target="_blank">GitHub</a>.
+		</p>
+
+		<h2>Early Partnerships</h2>
+		<p>
+			Interested in collaborative research, early access, or investment opportunities?
+		</p>
+		<p>
+			<strong>Contact:</strong> <a href="mailto:info@humem.ai">info@humem.ai</a>
+		</p>
+
+		<p style="margin-top: 3rem;">
+			<a href="https://github.com/humemai" target="_blank" style="text-decoration: underline;">View our open-source contributions →</a>
+		</p>
+	</TextSection>
 </Layout>

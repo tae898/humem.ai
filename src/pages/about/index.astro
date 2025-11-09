@@ -14,21 +14,38 @@ const seo = {
 		<div slot="text-container">
 			<h1>About HumemAI</h1>
 			<p>
-				HumemAI started from Taewoon Kim's PhD thesis, <em>"A Machine With Human‑Like
+				HumemAI started from Taewoon Kim's PhD, <em>"A Machine With Human‑Like
 Memory"</em>. The core idea: separate <strong>conversations</strong> from <strong>data</strong> using
 human‑inspired <strong>episodic</strong> and <strong>semantic memory</strong>, then glue together
-<strong>machine learning</strong>, <strong>temporal knowledge graphs</strong>, and <strong>SQL/NoSQL databases</strong>
+<strong>machine learning</strong>, <strong>temporal knowledge graphs</strong>, and <strong>databases</strong>
 to create <strong>agentic AI systems</strong> with persistent, explainable memory.
-</p>
-</div>
-<picture slot="image-container">
-<img
-src="/assets/images/about.png"
-alt="Taewoon Kim and Michiel at HumemAI"
-id="about-hero-image"
-/>
-</picture>
-</HeroSection>
+			</p>
+			
+			<div style="display: flex; align-items: center; gap: 1.5rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1);">
+				<img 
+					src="/assets/images/team/taewoon.png" 
+					alt="Taewoon Kim" 
+					style="width: 80px; height: 80px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);"
+				/>
+				<div>
+					<p style="margin: 0; font-size: 1.1rem;"><strong>Taewoon Kim</strong>, Founder</p>
+					<p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; opacity: 0.8;">
+						<a href="https://taewoon.kim" target="_blank">Website</a> · 
+						<a href="https://github.com/tae898" target="_blank">GitHub</a> · 
+						<a href="https://linkedin.com/in/tae898" target="_blank">LinkedIn</a> · 
+						<a href="https://twitter.com/tae898" target="_blank">X</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/about.png"
+				alt="Taewoon Kim, Founder of HumemAI"
+				id="about-hero-image"
+			/>
+		</picture>
+	</HeroSection>
 
 <TextSection narrow>
 <p>
@@ -36,7 +53,7 @@ id="about-hero-image"
 </p>
 
 <p>
-<strong>Semantic Memory</strong>: Your operational data remains in your databases while we add a thin compatibility layer when needed. Whether relational (SQL), document (MongoDB), graph (Neo4j), vector, or key‑value stores, HumemAI connects via adapters and performs intelligent read/write across your systems. When formats differ, we apply minimal, reversible transformations—not wholesale migrations—to fit supported engines and schemas.
+<strong>Semantic Memory</strong>: Your operational data remains in your databases while we add a thin compatibility layer when needed. Whether structured or unstructured, HumemAI connects via adapters and performs intelligent read/write across your systems. When formats differ, we apply minimal, reversible transformations—not wholesale migrations—to fit supported engines and schemas.
 </p>
 
 <p>
@@ -47,15 +64,26 @@ It powers <strong>agentic</strong> workflows: natural to use, explainable by des
 </p>
 
 <p>
-We're open‑source first. The stack—<strong>SQL and NoSQL databases</strong> (relational, graph, vector,
-key‑value, wide‑column, document, search), analytics, and LLMs—is built with permissive licenses.
-Bring your data in any format—tables, graphs, documents—and HumemAI stores conversations wisely in temporal knowledge graphs while keeping your source systems authoritative. Anyone can self‑host HumemAI for free. We also offer collaborative development and tailored system design to fit your specific data architecture.
+We're building on open foundations. HumemAI will provide an open‑source SDK that connects to your databases—whether structured or unstructured—while our core engine handles the intelligent memory architecture. Your data stays in your systems; we add the conversation layer as temporal knowledge graphs on top.
 </p>
 
 <p>
 Our research focus keeps us ahead: integrating ML with graphs and databases
 to scale reasoning, improve retrieval, and automate schema/ontology learning.
-That's how we move beyond short‑lived hype to durable capabilities grounded in cognitive science.
+That's how we move beyond short‑lived hype to durable capabilities.
+</p>
+
+<h2>Open Research & Development</h2>
+<p>
+HumemAI advances AI memory infrastructure through open‑source contributions and published research. We contribute to open-source databases and share our findings with the community, while building deep expertise in integrating these technologies into production systems.
+</p>
+
+<p>
+Our competitive advantage comes from years of experience with temporal graphs, multi‑model databases, and AI architectures — not from hiding code. We believe in building on open foundations while providing the integrated platform and expertise that takes time to master.
+</p>
+
+<p>
+<a href="https://github.com/humemai" target="_blank">View our open-source contributions →</a>
 </p>
 </TextSection>
 </Layout>

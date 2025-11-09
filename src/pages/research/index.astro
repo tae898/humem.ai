@@ -5,7 +5,7 @@ import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
   title: 'Research | HumemAI',
-  description: 'Advancing AI with human‑like memory at the intersection of cognitive science, temporal knowledge graphs, databases, and machine learning.',
+  description: 'Open research and contributions at the intersection of AI, temporal knowledge graphs, and databases.',
 };
 ---
 
@@ -14,9 +14,8 @@ const seo = {
     <div slot="text-container">
       <h1>Research at HumemAI</h1>
       <p>
-        We work at the intersection of <strong>cognitive science</strong>, <strong>temporal knowledge graphs</strong>,
-        <strong>databases</strong>, and <strong>AI (machine learning)</strong> to build agentic systems with
-        persistent, explainable memory.
+        We work at the intersection of <strong>AI</strong>, <strong>temporal knowledge graphs</strong>,
+        and <strong>databases</strong> to build systems with persistent, explainable memory.
       </p>
     </div>
     <picture slot="image-container">
@@ -25,32 +24,18 @@ const seo = {
   </HeroSection>
 
   <TextSection narrow>
+    <h2>Open Contributions</h2>
     <p>
-      <strong>Conversation‑aware knowledge graphs</strong>: Modeling dialogue as temporal graphs that capture the "where", "when", and "what" of interactions—supporting time‑aware recall and explanation.
+      HumemAI contributes to open‑source infrastructure and publishes research findings. Our work benefits the broader community while advancing the state of AI memory systems.
     </p>
 
     <p>
-      <strong>Data integration across engines</strong>: Connecting to relational, document, graph, vector, and key‑value stores using thin adapters and minimal, reversible transformations to align with supported engines and schemas—avoiding wholesale migration.
+      <strong>GitHub:</strong> <a href="https://github.com/humemai" target="_blank">github.com/humemai</a><br />
+      <strong>Publications:</strong> See our <a href="/blog">blog</a> for research updates
     </p>
 
-    <p>
-      <strong>Hybrid retrieval (relationship‑aware + vector)</strong>: Combining semantic embeddings with relationship‑aware queries over conversation graphs and data representations to improve accuracy, robustness, and transparency.
-    </p>
-
-    <p>
-      <strong>Temporal graph construction</strong>: Using LLMs and ML pipelines for entity/relation extraction, temporal schema induction, and continuous graph evolution from natural language.
-    </p>
-
-    <p>
-      <strong>Memory management policies</strong>: Learning what to store, summarize, link, and forget based on task performance and retrieval quality to support long‑lived agents.
-    </p>
-
-    <p>
-      <strong>Cross‑source query planning</strong>: Planning and executing operations that span conversation history and external data sources to ground answers in both interaction context and domain knowledge.
-    </p>
-
-    <p>
-      We publish, build open‑source tooling, and validate on real workloads so results transfer directly into product capabilities. <a href="/contact">Collaborate with us</a>.
+    <p style="margin-top: 3rem;">
+      <a href="/contact">Interested in collaboration?</a>
     </p>
   </TextSection>
 </Layout>

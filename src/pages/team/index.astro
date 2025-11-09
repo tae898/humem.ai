@@ -3,15 +3,15 @@ import { TextSection } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 
 const seo = {
-	title: 'Meet the HumemAI Team',
-	description: 'Meet the researchers, engineers, and visionaries building AI with human-like memory.',
+	title: 'About the Founder | HumemAI',
+	description: 'Meet Taewoon Kim, the founder and researcher behind HumemAI.',
 };
 
 const teamMembers = [
 	{
 		name: 'Taewoon Kim',
-		role: 'Founder & Chief Technology Officer (CTO)',
-	description: `AI researcher specializing in temporal knowledge graphs, machine learning, and human-like memory systems. He leads HumemAI’s development, ensuring the integration of AI with structured memory.`,
+		role: 'Founder',
+		description: `AI researcher specializing in temporal knowledge graphs, machine learning, and human-like memory systems. Taewoon founded HumemAI based on his PhD research and leads all aspects of development, from research to implementation.`,
 		image: '/assets/images/team/taewoon.png',
 		email: 'taewoon@humem.ai',
 		links: {
@@ -21,6 +21,8 @@ const teamMembers = [
 			X: 'https://twitter.com/tae898',
 		},
 	},
+	// {
+	// 	name: 'Rhubarb',
 	// {
 	// 	name: 'Michiel van der Meer',
 	// 	role: 'Chief Scientific Officer (CSO)',
@@ -34,17 +36,17 @@ const teamMembers = [
 	// 		X: 'https://twitter.com/mtichiel',
 	// 	},
 	// },
-	{
-		name: 'Iulia Dascalu-Kim',
-		role: 'Director of Cognitive Systems',
-		description: `Neuroscientist and cognitive scientist shaping HumemAI’s memory architecture. She bridges lab research and product, translating findings on attention, consolidation, and concept formation into our memory models, evaluation protocols, and human‑centered UX—so agents behave legibly and align with human expectations.`,
-		image: '/assets/images/team/iulia.png',
-		// email: 'iulia@humem.ai',
-		links: {
-			LinkedIn: 'https://www.linkedin.com/in/iulia-stefania-dascalu',
-			GitHub: 'https://github.com/IuliaDascaluKim'
-		},
-	},
+	// {
+	// 	name: 'Iulia Dascalu-Kim',
+	// 	role: 'Director of Cognitive Systems',
+	// 	description: `Neuroscientist and cognitive scientist shaping HumemAI’s memory architecture. She bridges lab research and product, translating findings on attention, consolidation, and concept formation into our memory models, evaluation protocols, and human‑centered UX—so agents behave legibly and align with human expectations.`,
+	// 	image: '/assets/images/team/iulia.png',
+	// 	// email: 'iulia@humem.ai',
+	// 	links: {
+	// 		LinkedIn: 'https://www.linkedin.com/in/iulia-stefania-dascalu',
+	// 		GitHub: 'https://github.com/IuliaDascaluKim'
+	// 	},
+	// },
 	// {
 	// 	name: 'Rhubarb',
 	// 	role: 'Chief Enthusiasm Officer (CEO)',
@@ -67,9 +69,9 @@ const teamMembers = [
 
 <Layout {seo}>
 	<TextSection narrow>
-		<h1 style="text-align: center;">Meet the HumemAI Team</h1>
+		<h1 style="text-align: center;">About the Founder</h1>
 		<p style="text-align: center;">
-			Behind HumemAI is a dedicated team of <strong>AI researchers, engineers, and visionaries</strong> pushing the boundaries of artificial intelligence. With expertise in temporal knowledge graphs, large language models, and deep learning, we are pioneering <strong>agentic AI systems</strong> with human-like memory.
+			Taewoon Kim is an <strong>AI researcher</strong> specializing in temporal knowledge graphs, machine learning, and human-like memory systems. He founded HumemAI based on his PhD research, <em>"A Machine With Human‑Like Memory"</em>, and is pioneering <strong>agentic AI systems</strong> with persistent, explainable memory.
 		</p>
 		{teamMembers.map(member => (
 			<div class="team-member">
