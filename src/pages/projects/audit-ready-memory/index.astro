@@ -1,0 +1,92 @@
+---
+import Layout from '../../../layouts/Page.astro';
+import HeroSection from '../../../components/sections/heros/HeroSection.astro';
+import TextSection from '../../../components/sections/TextSection.astro';
+
+const seo = {
+	title: 'Audit-Ready Memory | HumemAI',
+	description:
+		'Local-first, auditable memory for AI agents with transparent logs, deterministic replay, and explicit deletion workflows.',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>Audit-Ready Memory</h1>
+			<p>
+				A local-first memory layer for AI agents with transparent logs,
+				deterministic replay, and explicit deletion workflows.
+			</p>
+
+			<p>
+				This project is being developed to make AI
+				memory more inspectable, reproducible, and accountable in practice.
+			</p>
+
+			<p>
+				This work is funded by <a href="https://www.sidnfonds.nl/" target="_blank">SIDN Fund</a>.
+			</p>
+
+			<p>
+				<a href="https://github.com/humemai/audit-ready-memory" target="_blank"
+					>View the repository</a
+				>
+				· <a href="/contact">Contact HumemAI</a>
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/research.png"
+				alt="Illustration for the Audit-Ready Memory project"
+				id="audit-ready-memory-hero-image"
+			/>
+		</picture>
+	</HeroSection>
+
+	<TextSection narrow>
+		<h2>What it is</h2>
+		<p>
+			Audit-Ready Memory treats agent memory as a structured, time-stamped
+			record instead of opaque model state. The goal is to make it possible to
+			inspect what an agent remembered, trace how memory was used, replay prior
+			state deterministically, and handle deletion explicitly.
+		</p>
+
+		<h2>Why it matters</h2>
+		<p>
+			Many current AI systems rely on hidden memory mechanisms or external
+			services that are difficult to audit. That makes accountability,
+			correction, and deletion harder than they should be, especially in
+			public-interest settings. This project focuses on a simpler alternative:
+			local-first memory with clear provenance, reproducible behavior, and
+			operator control.
+		</p>
+
+		<h2>What this project will deliver</h2>
+		<p>
+			The project focuses on a minimal but reusable core: transparent
+			memory logs, deterministic replay, explicit deletion workflows, a small
+			demo, and open documentation. The intent is to produce a concrete artifact
+			that researchers, civic-tech teams, and other public-interest builders can
+			inspect and build on.
+		</p>
+
+		<h2>Status</h2>
+		<p>
+			The repository has been created and the public project page is live. Code,
+			documentation, benchmarks, and demo materials will be published here as the
+			project progresses.
+		</p>
+
+		<h2>Links</h2>
+		<p>
+			<strong>Repository:</strong>
+			<a href="https://github.com/humemai/audit-ready-memory" target="_blank"
+				>github.com/humemai/audit-ready-memory</a
+			><br />
+			<strong>Organization:</strong>
+			<a href="https://github.com/humemai" target="_blank">github.com/humemai</a>
+		</p>
+	</TextSection>
+</Layout>

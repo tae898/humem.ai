@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import TextSection from '../../components/sections/TextSection.astro';
+
+const seo = {
+	title: 'Projects | HumemAI',
+	description:
+		'Public projects from HumemAI across AI memory, auditability, and open infrastructure.',
+};
+
+const projects = [
+	{
+		title: 'Audit-Ready Memory',
+		href: '/projects/audit-ready-memory',
+		description:
+			'Local-first, auditable memory for AI agents with transparent logs, deterministic replay, and explicit deletion workflows. Funded by SIDN Fund.',
+	},
+];
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>Projects</h1>
+			<p>
+				Public projects from HumemAI, focused on trustworthy AI,
+				memory infrastructure, and open, reusable systems.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/research.png"
+				alt="HumemAI projects"
+				id="projects-hero-image"
+			/>
+		</picture>
+	</HeroSection>
+
+	<TextSection>
+		<div class="project-grid">
+			{projects.map((project) => (
+				<article class="project-card">
+					<h2>
+						<a href={project.href}>{project.title}</a>
+					</h2>
+					<p>{project.description}</p>
+					<p>
+						<a href={project.href}>View project</a>
+					</p>
+				</article>
+			))}
+		</div>
+	</TextSection>
+</Layout>
+
+<style>
+	.project-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.project-card {
+		padding: 1.5rem;
+		border: 1px solid rgba(0, 0, 0, 0.08);
+		border-radius: var(--theme-shape-radius);
+		background: var(--theme-surface-1);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+	}
+
+	.project-card h2 {
+		margin-top: 0;
+		margin-bottom: 0.75rem;
+	}
+</style>
